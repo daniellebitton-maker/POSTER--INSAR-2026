@@ -118,15 +118,24 @@
             transition: all 0.2s;
             cursor: pointer;
             width: 100%;
+            margin-bottom: 12px;
         }
         .btn:active { transform: scale(0.98); }
-        .btn-email { background-color: var(--accent-blue); color: #fff; border: none; }
-        .btn-poster {
+        .btn-email { background-color: var(--accent-blue); color: #fff; border: none; margin-bottom: 0; }
+        
+        .btn-view {
+            background-color: var(--primary-blue);
+            color: #fff;
+            border: none;
+        }
+        
+        .btn-download {
             background-color: #fff;
             color: var(--primary-blue);
             border: 2px solid var(--primary-blue);
             margin-bottom: 25px;
         }
+
         .footer {
             font-size: 12px;
             color: #94a3b8;
@@ -151,9 +160,14 @@
                 The Hebrew University of Jerusalem | Achva Academic College
             </div>
 
-            <!-- חשוב: הקישור הזה חייב להתאים בדיוק לשם הקובץ שהעלית ל-GitHub -->
-            <a href="academic_research_poster.html" target="_blank" class="btn btn-poster">
-                <i class="fa-solid fa-file-pdf"></i> View Digital Poster
+            <!-- אפשרות 1: צפייה בגרסה הדיגיטלית האינטראקטיבית -->
+            <a href="academic_research_poster.html" target="_blank" class="btn btn-view">
+                <i class="fa-solid fa-mobile-screen-button"></i> View Interactive Poster
+            </a>
+
+            <!-- אפשרות 2: הורדה ישירה של קובץ ה-PDF -->
+            <a href="poster.pdf" download="INSAR_2026_Poster_Bitton.pdf" class="btn btn-download">
+                <i class="fa-solid fa-file-arrow-down"></i> Download PDF Version
             </a>
 
             <div class="contact-section">
