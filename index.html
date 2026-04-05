@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSAR 2026 Poster Contact Card - Bitton & Shulman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; }
+        :root {
+            --primary-blue: #0f4c75;
+            --accent-blue: #3282b8;
+            --bg-light: #f1f5f9;
+            --text-dark: #1e293b;
+        }
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: var(--bg-light);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            overflow: hidden;
+        }
+        .card-header {
+            background-color: var(--primary-blue);
+            padding: 35px 25px;
+            color: #fff;
+            text-align: center;
+        }
+        .header-title {
+            font-family: 'Heebo', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            opacity: 0.9;
+            font-weight: 700;
+        }
+        .research-topic {
+            font-family: 'Heebo', sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            max-width: 380px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+        .card-body {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .university-info {
+            font-family: 'Heebo', sans-serif;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .contact-section {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            width: 100%;
+        }
+        .researcher-name {
+            font-family: 'Heebo', sans-serif;
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 0 0 5px 0;
+        }
+        .researcher-role {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 8px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        .email-display {
+            font-family: 'Assistant', sans-serif;
+            font-size: 13.5px;
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+            display: block;
+            word-break: break-all;
+            font-weight: 600;
+        }
+        .btn {
+            font-family: 'Heebo', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.2s;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn:active { transform: scale(0.98); }
+        .btn-email { background-color: var(--accent-blue); color: #fff; border: none; }
+        .btn-poster {
+            background-color: #fff;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            margin-bottom: 25px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #94a3b8;
+            text-align: center;
+            margin-top: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="card-header">
+                <div class="header-title">INSAR 2026 Poster</div>
+                <div class="research-topic">
+                    The Impact of Parent-Child Relationship Quality on the Link Between Parental Stress and Behavioral Problems in Children with Autism
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="university-info">
+                The Hebrew University of Jerusalem | Achva Academic College
+            </div>
+
+            <!-- חשוב: הקישור הזה חייב להתאים בדיוק לשם הקובץ שהעלית ל-GitHub -->
+            <a href="academic_research_poster.html" target="_blank" class="btn btn-poster">
+                <i class="fa-solid fa-file-pdf"></i> View Digital Poster
+            </a>
+
+            <div class="contact-section">
+                <h2 class="researcher-name">Danielle Bitton</h2>
+                <div class="researcher-role">Center Administrative Director & Research Coordinator<br>The Autism Center, The Hebrew University of Jerusalem, Israel</div>
+                <span class="email-display">danielle.bitton@mail.huji.ac.il</span>
+                <a href="mailto:danielle.bitton@mail.huji.ac.il" class="btn btn-email">
+                    <i class="fa-solid fa-envelope"></i> Email Danielle
+                </a>
+            </div>
+
+            <div class="contact-section">
+                <h2 class="researcher-name">Prof. Cory Shulman</h2>
+                <div class="researcher-role">Director, The Autism Center<br>The Hebrew University of Jerusalem, Israel</div>
+                <span class="email-display">cory.shulman@mail.huji.ac.il</span>
+                <a href="mailto:cory.shulman@mail.huji.ac.il" class="btn btn-email">
+                    <i class="fa-solid fa-envelope"></i> Email Prof. Shulman
+                </a>
+            </div>
+
+            <div class="footer">
+                Scan the QR code on the poster to return here.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
